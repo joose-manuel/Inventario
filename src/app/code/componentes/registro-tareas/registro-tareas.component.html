@@ -1,0 +1,40 @@
+<app-header></app-header>
+<app-fondo></app-fondo>
+<div class="centro">
+    <div>
+        <app-barra-lateral></app-barra-lateral>
+    </div>
+    <div class="principalMayor">
+        <div class="principal">
+            <div class="complementoPrincipal">
+                <div class="pestana">
+                    <p>Crear tareas</p>
+                </div>
+                <form (ngSubmit)="agregarTarea()">
+                <div class="formulario">
+                    <div class="titulos">
+                        <label for="texto">Num tarea:</label><br><br>
+                        <label for="texto">Num remision:</label><br><br>
+                        <label for="texto">Fecha recibido:</label><br><br>
+                        <label for="texto">Cliente:</label> <br><br>
+                        <label for="texto">Cant metros:</label><br><br>
+                        
+                    </div>
+                    <div class="casilla">
+                        <input 
+                        type="text"
+                        id=""
+                        >
+                    </div>
+                    
+                </div>
+                <div class="botonera">
+                    3
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>

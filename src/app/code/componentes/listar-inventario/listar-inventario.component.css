@@ -1,0 +1,97 @@
+.centro{
+    display: grid;
+    grid-template-columns: 30% auto;
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.centro-{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro{
+    background-color:rgba(230, 223, 217, 1) ;
+    width: 20%;
+    height: 100%;    
+    border-radius: 0px 20px 0px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: poppins;
+}
+.centro-pricipal{
+    width: 88%;
+    height: 77%;
+    background-color: rgba(230, 223, 217, 1);
+    display: grid;
+    grid-template-rows: 10% auto;
+}
+.header1{
+    background-color: white;
+}
+
+.conte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conte2{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+}
+.titulo1{
+    font-family: poppins;
+    font-weight: 100px;
+}
+.head-board{
+    width: 90%;
+    height: 10%;
+    /* border: solid; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+}
+
+.head-board div {
+   background-color: rgba(114, 149, 153, 1);
+   color: white;    
+   text-align: center;
+    border-right: solid rgb(255, 255, 255) 1px ;
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+}
+
+.body-board{
+    display: flex;
+    justify-content:center ;
+}
+
+.board2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.board2 div {
+    background-color: white ;
+    border: solid;
+}
+.board1{
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.board12{
+    width: 90%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.board12 div {
+    background-color: white;
+}

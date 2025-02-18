@@ -1,0 +1,47 @@
+<div class="container-principal">
+  <div class="logo">
+    <a [routerLink]="['/centro']">
+      <img src="assets/iconos/invorg2.png" alt="" class="logo1">
+    </a>
+  </div>
+  <div class="cotenedor-input">
+      <div>
+      </div>
+      <div class="contenedor-input-1">
+          <div class="input-2">
+              <div  class="circulo-buscador">
+        <div class="circulo"></div>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="radio"
+          class="buscador"
+          [(ngModel)]="inputText" 
+          (focus)="clearText()"
+           (blur)="restoreText()"
+        />
+      </div>
+
+          </div>
+      </div>
+      <div>
+      </div>
+  </div>
+  <div class="contendedor-texto1">
+     <div class="cuadro-detexto" >
+          <p class="sindec2">Configuracion</p>
+          <div class="a">
+              <div class="p"> <a routerLink="/registrar-prouctos" class="menu">Crear Productos </a></div>
+              <div class="p"> <a href=""class="menu">Crear tareas</a></div>
+              <div class="p"> <a routerLink="/material" class="menu">Crear Materiales</a></div>
+              <div class="p1"> <a href=""class="menu">Crear Usuarios</a></div>
+          </div>
+     </div>
+      
+  </div>
+  <div class="contendedor-texto2" >
+      <a class="sindec" [routerLink]="['/login']"><p>Cerrar sesion</p></a>
+      
+  </div>
+</div>

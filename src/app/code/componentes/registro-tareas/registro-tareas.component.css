@@ -1,0 +1,49 @@
+.centro{
+    display: grid;
+    grid-template-columns: 30% auto;
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.principalMayor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    border: solid;
+    background-color: rgba(230, 223, 217, 1);
+}
+.complementoPrincipal{
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+    border: solid;
+    height: 100%;
+    width: 100%;
+}
+.pestana{
+    background-color: rgba(114, 149, 153, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    color: white;
+    font-weight: bold;
+}
+.formulario{
+    background-color: rgba(230, 223, 217, 1);
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border: solid; */
+    margin-left: 15px;
+}
+.titulos label{
+    font-family: poppins;
+    color: rgba(114, 149, 153, 1);
+}

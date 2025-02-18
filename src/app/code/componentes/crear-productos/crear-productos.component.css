@@ -1,0 +1,88 @@
+.centro{
+
+    display: grid;
+    grid-template-columns: 30% auto;
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+}
+.centro div {
+
+   
+    /* border: solid;- */
+
+}
+
+.formulario{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    /* border: solid; */
+}
+.contrendor-formularios{
+    /* border: solid; */
+    display: grid;
+    grid-template-rows: 10% auto;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(230, 223, 217, 1);
+
+}
+.header1{
+    background-color: rgba(114, 149, 153, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    color: white;
+   
+}
+.form{
+    /* border: solid; */
+    width: 85%;
+    font-family: poppins;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* border: solid; */
+
+    
+}
+.formularios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+  
+}   
+
+.contenedor-btne{
+
+    display: flex;
+    justify-content: center;
+    
+}
+.bon{
+    background-color: #729599; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 30px; /* Espaciado interno (arriba/abajo, derecha/izquierda) */
+    width: 140%;
+    border: none; /* Quitar bordes */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    margin-right: 5%; /* Separación entre botones */
+    font-family: poppins;
+    ;
+}
+.bon:hover{
+    background-color: #4196a0;
+}
+
+.inp{
+    border-radius: 5px;
+    border:none;
+}

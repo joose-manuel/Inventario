@@ -1,0 +1,17 @@
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    position: fixed;
+    opacity: 0.5;
+    
+}
+.imgen1{
+    width: 473px;
+    height: 280px;
+
+}

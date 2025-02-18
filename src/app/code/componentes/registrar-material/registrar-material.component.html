@@ -1,0 +1,128 @@
+<app-header></app-header>
+<app-fondo></app-fondo>
+<div class="centro">
+  <div>
+    <app-barra-lateral></app-barra-lateral>
+  </div>
+  <div class="completisimo">
+    <div class="contenedor-completo">
+      <div class="pestana">
+        <div class="kkk">
+          <p class="d">Cargar Material</p>
+        </div>
+        <div class="p2"></div>
+      </div>
+      <div class="header-cent">
+        <div class="sss">
+          <p class="titulo1">Cargar material:</p>
+        </div>
+        <div class="sss">
+          <p class="titulo1">Cargar material:</p>
+        </div>
+      </div>
+      <div class="cental">
+        <div class="formulario">
+          <form (ngSubmit)="agregarMaterial()" class="contrendor-formularios">
+            <div class="centro11">
+              <div class="formularios">
+                <div class="form">
+                  <label for="anchoMaterial">Ancho de Material:</label>
+                  <input
+                    type="text"
+                    id="anchoMaterial"
+                    name="anchoMaterial"
+                    [(ngModel)]="material.anchoMaterial"
+                  /><br /><br />
+                  <label for="metrajeMaterial">Metraje de Material:</label>
+                  <input 
+                  type="text"
+                  id="metrajeMaterial"
+                  name="metrajeMaterial"
+                  [(ngModel)]="producto.metrajeMaterial"
+                  /> <br/> <br/>
+                  <label for="tipoMaterial">Tipo de material:</label>
+                  <input
+                    type="text"
+                    id="tipoMaterial"
+                    name="tipoMaterial"
+                    [(ngModel)]="material.tipoMaterial"
+                  /><br /><br />
+                  <label for="tonalidad">Tonalidad:</label>
+                  <input
+                    type="text"
+                    id="tonalidad"
+                    name="tonalidad"
+                    [(ngModel)]="material.tonalidad"
+                  /><br /><br />
+                  <label for="color">Color:</label>
+                  <input
+                    type="text"
+                    id="color"
+                    name="color"
+                    [(ngModel)]="material.color"
+                  /><br /><br />
+                  <label for="Proveedor">Proveedor:</label>
+                  <input 
+                  type="text"
+                  id="Proveedor"
+                  name="Proveedor"
+                  [(ngModel)]="persona.nombre"
+                  /> <br/><br/>
+                  <label for="fechaFacturaProveedor">Fecha de compra:</label>
+                  <input 
+                  type="text"
+                  id="fechaFacturaProveedor" 
+                  name="fechaFacturaProveedor" 
+                  [(ngModel)]="producto.fechaFacturaProveedor"
+                  /> <br/><br/>
+                  <label for="idMaterial"> Cod material:</label>
+                  <input 
+                  type="text" 
+                  id="idMaterial"
+                  name="idMaterial"
+                  [(ngModel)]="material.idMaterial"
+                  /> <br/><br/>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </form>
+        </div>
+        <div class="tabla">
+          <div class="contendor-texto"></div>
+          <div class="centro-tabla">
+            <div class="board1">
+              <div class="head-board">
+                <div>Codigo</div>
+                <div>Tipo de material</div>
+                <div>Metraje</div>
+                <div>Fecha de compra</div>
+                <div>Proveedor</div>
+              </div>
+              <!-- for -->
+              <div *ngFor="let material of materiales">
+                <div class="board12">
+                  <div>{{ material.idMaterial }}</div>
+                  <div>{{ material.tipoMaterial }}</div>
+                  <div *ngFor="let producto of productos">
+                    <div>{{ producto.metrajeMaterial }}</div>
+                    <div>{{ producto.fechaFacturaProveedor }}</div>
+                  </div>
+                  <div *ngFor="let persona of personas">
+                    <div>{{ persona.nombre }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="botonera">
+        <div class="contenedor-btne">
+          <button class="bon" type="submit">Enviar</button>
+          <button routerLink="/" class="bon">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

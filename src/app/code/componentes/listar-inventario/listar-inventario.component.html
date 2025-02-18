@@ -1,0 +1,50 @@
+<app-header></app-header>   
+<div class="centro">
+    <div>
+        <app-barra-lateral></app-barra-lateral>
+    </div>
+    <div class="centro-">
+        <div class="centro-pricipal" >
+            <div class="header1">
+                <div class="cuadro">
+                    <p>Inventario</p>
+                </div>
+            </div>
+            <div class="conte1">
+                <div class="conte2">
+                    <div ><p class="titulo1">Inventario</p></div>
+                    <div>
+                        <div class="board1">
+                            <div class="head-board">
+                                <div>Codigo</div>
+                                <div>Tipo de material</div>
+                                <div>Metraje</div>
+                                <div>Fecha de compra</div>
+                                <div>Proveedor</div>
+                            </div>
+                             <!-- for -->
+                            <div *ngFor="let material of materiales" >
+                                <div class="board12">
+                                    <div>{{material.idMaterial }}</div>
+                                    <div>{{material.tipoMaterial }}</div>
+                            <div *ngFor="let producto of productos">
+                                    <div>{{producto.metrajeMaterial}}</div>
+                                    <div>{{producto.fechaFacturaProveedor}}</div>
+                            </div>
+                            <div *ngFor="let persona of personas">
+                                    <div>{{persona.nombre}}</div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div>3</div>
+                
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+</div>
+

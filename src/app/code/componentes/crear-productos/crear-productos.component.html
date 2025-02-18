@@ -1,0 +1,80 @@
+<app-header></app-header>
+<app-fondo></app-fondo>
+<div class="centro">
+  <div>
+    <app-barra-lateral></app-barra-lateral>
+  </div>
+  <div class="formulario">
+    <form (ngSubmit)="agregarProducto()" class="contrendor-formularios">
+      <div class="header1">
+        <p>Crear productos</p>
+      </div>
+      <div>
+        <div class="formularios">
+          <div class="form">
+            <div>
+              <br />
+              <label for="texto">Tipo: </label><br /><br />
+              <label for="texto">Material:</label><br /><br />
+              <label for="texto">Ancho de material:</label><br /><br />
+              <label for="texto">Color:</label><br /><br />
+              <label for="texto">Nombre:</label><br /><br />
+              <label for="texto">Cantidad en cm:</label><br /><br />
+            </div>
+            <div>
+              <br />
+              <input
+                class="inp"
+                type="text"
+                id="tipo"
+                name="metrajeMaterial"
+                required
+                [(ngModel)]="nuevoProducto.facturaProveedor"
+              /><br /><br />
+              <input class="inp" type="text" /><br /><br />
+              <input
+                class="inp"
+                type="email"
+                id="correo"
+                name="correo"
+                required
+              /><br /><br />
+              <input
+                class="inp"
+                type="email"
+                id="correo"
+                name="correo"
+                required
+              /><br /><br />
+              <input
+                class="inp"
+                type="email"
+                id="correo"
+                name="correo"
+                required
+              /><br /><br />
+              <input
+                class="inp"
+                type="email"
+                id="correo"
+                name="correo"
+                required
+              /><br /><br />
+            </div>
+            <br />
+
+            <!-- Botón para enviar el formulario o salir -->
+            <div class="contenedor-btne">
+              <button class="bon" type="submit">Enviar</button>
+              <a routerLink="/">
+                <button class="bon" type="submit">Cerrar</button></a
+              >
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
